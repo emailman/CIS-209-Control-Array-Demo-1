@@ -74,11 +74,12 @@ namespace Control_Array_Demo1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            int n = 0;
             foreach (Control each in panel1.Controls)
                 if (each is TextBox)
                 {
-                    each.Text = "found a text box";
-                    Console.WriteLine("found " + each.Name);
+                    n++;
+                    each.Text = "found text box " + n;
                 }
         }
     }
