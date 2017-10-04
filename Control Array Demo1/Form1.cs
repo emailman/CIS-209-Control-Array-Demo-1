@@ -13,9 +13,6 @@ namespace Control_Array_Demo1
         public Form1()
         {
             InitializeComponent();
-
-            // Initialize the array with text box controls
-            students = new TextBox[] { tbx1, tbx2, tbx3, tbx4 };
         }
 
         private void btnProcess_Click(object sender, EventArgs e)
@@ -75,14 +72,13 @@ namespace Control_Array_Demo1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int n = 0;
             // Look at all the controls in the panel
             foreach (Control each in panel1.Controls)
                 if (each is TextBox)
                 {
-                    // Identify the text boxes found by name
-                    n++;
-                    each.Text = n + ": found " + each.Name;
+                    // Add all text boxes found in the panel
+                    // to the list
+                    students.Add((TextBox)each);               
                 }
         }
     }
