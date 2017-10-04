@@ -22,8 +22,8 @@ namespace Control_Array_Demo1
             double sum = 0;
             int count = 0;
             double grade;
-            double largest = double.MinValue;
-            double smallest = double.MaxValue;
+            double largest = Double.MinValue;
+            double smallest = Double.MaxValue;
 
             // Handle each Text Box in the array
             foreach (TextBox each in students)
