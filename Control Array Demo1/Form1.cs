@@ -75,9 +75,11 @@ namespace Control_Array_Demo1
         private void Form1_Load(object sender, EventArgs e)
         {
             int n = 0;
+            // Look at all the controls in the panel
             foreach (Control each in panel1.Controls)
                 if (each is TextBox)
                 {
+                    // Identify the text boxes found by name
                     n++;
                     each.Text = n + ": found " + each.Name;
                 }
