@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace Control_Array_Demo1
 {
     public partial class Form1 : Form
     {
-        // Create an array of TextBox objects
+        // Create a list of TextBox objects
         // Must be global to the class
-        TextBox[] students;
+        List<TextBox> students = new List<TextBox>();
 
         public Form1()
         {
