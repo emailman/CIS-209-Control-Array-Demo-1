@@ -79,7 +79,7 @@ namespace Control_Array_Demo1
                 if (each is TextBox)
                 {
                     n++;
-                    each.Text = "found text box " + n;
+                    each.Text = n + ": found " + each.Name;
                 }
         }
     }
