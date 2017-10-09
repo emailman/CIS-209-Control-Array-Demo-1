@@ -6,8 +6,8 @@ namespace Control_Array_Demo1
     public partial class Form1 : Form
     {
         // Create an array of TextBox objects
-        // Must be global to the class
-        TextBox[] students;
+        // as a class variable
+        private TextBox[] students;
 
         public Form1()
         {
