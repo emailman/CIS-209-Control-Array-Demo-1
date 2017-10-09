@@ -74,12 +74,14 @@ namespace Control_Array_Demo1
         {
             // Look at all the controls in the panel
             foreach (Control each in panel1.Controls)
+            {
                 if (each is TextBox)
                 {
                     // Add all text boxes found in the panel
                     // to the list
-                    students.Add((TextBox)each);               
+                    students.Add((TextBox)each);
                 }
+            }
         }
     }
 }
