@@ -7,7 +7,7 @@ namespace Control_Array_Demo1
     public partial class Form1 : Form
     {
         // Create a list of TextBox objects
-        // Must be global to the class
+        // as a class variable
         List<TextBox> students = new List<TextBox>();
 
         public Form1()
